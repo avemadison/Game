@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespase Snake {
-    class VerticalLine {
+    class VerticalLine : Figure
+    {
         public VerticalLine(int yUp, int yDown, int x, char sym)
         {
             pList = new List<Point>();
