@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespase Snake {
-    class HorizontalLine {
-        List <Point> pList;
+    class HorizontalLine : Figure
+    {
         public HorizontalLine(int xLeft, int xRight, int y, char sym)
         {
             pList = new List<Point>();
@@ -14,12 +14,6 @@ namespase Snake {
                 Point p = new Point(x,y,sym);
                 pList.Add(p);
             }
-        }
-    }
-    public void Draw(){
-        foreach(Point p in pList)
-        {
-            p.Draw();
         }
     }
 }
