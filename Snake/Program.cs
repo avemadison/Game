@@ -24,7 +24,7 @@ namespase Snake {
               
               //отрисовка точек
               Point p = new Point(4,5,'*');
-              p.Draw();
+              Snake snake = new Snake(p, 4, Direction.Right);
 //              List<int> numList = new List <int>();
 //              numList.Add(0);
 //              numList.Add(1);
